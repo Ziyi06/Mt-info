@@ -10,9 +10,12 @@ Global topography data from ETOPO1 (https://www.ncei.noaa.gov/products/etopo-glo
 Global Moho depth data are from CRUST1.0 (https://igppweb.ucsd.edu/~gabi/crust1.html), at one-degree resolution (Laske et al., 2013). 
 
 
+
+
 References:
 
 Amante, C. and B.W. Eakins, 2009. ETOPO1 1 Arc-Minute Global Relief Model: Procedures, Data Sources and Analysis. NOAA Technical Memorandum NESDIS NGDC-24. National Geophysical Data Center, NOAA. doi:10.7289/V5C8276M [2022]
+
 Laske, G., Masters., G., Ma, Z. and Pasyanos, M., Update on CRUST1.0 - A 1-degree Global Model of Earth's Crust, Geophys. Res. Abstracts, 15, Abstract EGU2013-2658, 2013.
 
 
