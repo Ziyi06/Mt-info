@@ -173,7 +173,7 @@ def glob_info(mt_name):
 shp = geopandas.read_file('./ne_50m_geography_regions_polys/ne_50m_geography_regions_polys.shp')
 topo = rasterio.open('./ETOPO1_Bed_g_geotiff.tif')
 
-fname = data_path + 'crust1.0/depthtomoho.xyz'
+fname = './crust1.0/depthtomoho.xyz'
 dlon_crust1pt0_moho, dlat_crust1pt0_moho = 1, 1
 data_crust1pt0_moho, extent_crust1pt0_moho = _loadxyz2grd(fname,"lonlat", dlon_crust1pt0_moho, dlat_crust1pt0_moho)
 
