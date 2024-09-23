@@ -169,7 +169,7 @@ def glob_info(mt_name):
 
 
 shp = geopandas.read_file('./Data/ne_50m_geography_regions_polys/ne_50m_geography_regions_polys.shp')
-topo = rasterio.open('./Data/ETOPO1_Bed_g_geotiff.tif')
+topo = rasterio.open('./ETOPO1_Bed_g_geotiff.tif') ## This file can be downloaded from https://www.ncei.noaa.gov/products/etopo-global-relief-model 
 
 fname = './Data/crust1.0/depthtomoho.xyz'
 dlon_crust1pt0_moho, dlat_crust1pt0_moho = 1, 1
