@@ -1,6 +1,4 @@
 
-from paths import *
-
 from osgeo import gdal
 from osgeo import osr
 import os
@@ -170,14 +168,14 @@ def glob_info(mt_name):
     return {'name': name, 'length': L, 'width': w, 'height': h_ave, 'erosion': eros, 'moho': moho_ave}
 
 
-shp = geopandas.read_file('./ne_50m_geography_regions_polys/ne_50m_geography_regions_polys.shp')
-topo = rasterio.open('./ETOPO1_Bed_g_geotiff.tif')
+shp = geopandas.read_file('./Data/ne_50m_geography_regions_polys/ne_50m_geography_regions_polys.shp')
+topo = rasterio.open('./Data/ETOPO1_Bed_g_geotiff.tif')
 
-fname = './crust1.0/depthtomoho.xyz'
+fname = './Data/crust1.0/depthtomoho.xyz'
 dlon_crust1pt0_moho, dlat_crust1pt0_moho = 1, 1
 data_crust1pt0_moho, extent_crust1pt0_moho = _loadxyz2grd(fname,"lonlat", dlon_crust1pt0_moho, dlat_crust1pt0_moho)
 
-outputfile = './outpu_figs/'
+outputfile = './Data/outpu_figs/'
 outputPath = os.path.join(os.path.abspath("."),outputfile) 
 if not os.path.exists(outputPath):
     os.makedirs(outputPath)
