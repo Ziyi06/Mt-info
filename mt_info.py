@@ -168,14 +168,14 @@ def glob_info(mt_name):
     return {'name': name, 'length': L, 'width': w, 'height': h_ave, 'erosion': eros, 'moho': moho_ave}
 
 
-shp = geopandas.read_file('./Data/ne_50m_geography_regions_polys/ne_50m_geography_regions_polys.shp')
-topo = rasterio.open('./ETOPO1_Bed_g_geotiff.tif') ## This file can be downloaded from https://www.ncei.noaa.gov/products/etopo-global-relief-model 
+shp = geopandas.read_file(data_path + 'ne_50m_geography_regions_polys/ne_50m_geography_regions_polys.shp')
+topo = rasterio.open(data_path + 'ETOPO1_Bed_g_geotiff.tif') ## This file can be downloaded from https://www.ncei.noaa.gov/products/etopo-global-relief-model 
 
-fname = './Data/crust1.0/depthtomoho.xyz'
+fname = data_path + 'crust1.0/depthtomoho.xyz'
 dlon_crust1pt0_moho, dlat_crust1pt0_moho = 1, 1
 data_crust1pt0_moho, extent_crust1pt0_moho = _loadxyz2grd(fname,"lonlat", dlon_crust1pt0_moho, dlat_crust1pt0_moho)
 
-outputfile = './Data/outpu_figs/'
+outputfile = data_path + 'outpu_figs/'
 outputPath = os.path.join(os.path.abspath("."),outputfile) 
 if not os.path.exists(outputPath):
     os.makedirs(outputPath)
