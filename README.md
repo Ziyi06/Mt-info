@@ -22,4 +22,6 @@ for three modern collisional mountains, the Himalaya-Tibetan plateau, Alps and Z
 - Laske, G., Masters., G., Ma, Z. and Pasyanos, M., Update on CRUST1.0 - A 1-degree Global Model of Earth's Crust, Geophys. Res. Abstracts, 15, Abstract EGU2013-2658, 2013.
 
 
+# Mt-map
 
+This module provides codes to plot maps of mountains, such as the Himalaya-Tibetan plateau, Alps and Zagros, as shown in the Figure 2 of Zhu et al., 2024 (doi: https://doi.org/10.1016/j.epsl.2024.119070). 
