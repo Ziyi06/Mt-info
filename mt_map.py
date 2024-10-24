@@ -1,7 +1,3 @@
-
-from paths import *
-
-import matplotlib.pyplot as plt
 import matplotlib.pyplot as plt
 import matplotlib.colors
 import rasterio
@@ -81,8 +77,6 @@ def _cal_eros(maps):  # From Vance et al. (2003)
     eros_map = 1e-2 * 10 ** (rlf / 500.)
     return np.nanmean(eros_map), eros_map
 
-
-
 def plot_mt(mt_name, savfig=0, show=1):
     fig, ax = plt.subplots(1, 1, figsize=(6.5, 5.5))
 
@@ -115,4 +109,3 @@ topo = rasterio.open(data_path + 'ETOPO1_Bed_g_geotiff.tif')
 
 # plot_mt("Alps", savfig=1)
 plot_mt("Zagros", savfig=0)
-
