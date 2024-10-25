@@ -1,4 +1,3 @@
-
 from osgeo import gdal
 from osgeo import osr
 import os
@@ -11,7 +10,6 @@ import rasterio
 import geopandas
 import warnings
 import shapely
-
 
 earth_radius = 6377.6
 deg = earth_radius * np.pi / 180  # 111.3 km
