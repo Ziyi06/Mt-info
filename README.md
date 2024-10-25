@@ -24,4 +24,4 @@ for three modern collisional mountains, the Himalaya-Tibetan plateau, Alps and Z
 
 # Mt-map
 
-This module provides codes to plot maps of mountains, such as the Himalaya-Tibetan plateau, Alps and Zagros, as shown in the Figure 2 of Zhu et al., 2024 (doi: https://doi.org/10.1016/j.epsl.2024.119070). 
+This module provides codes to plot maps of the Himalaya-Tibetan Plateau, Alps and Zagros, from Natural Earth’s physical vectors of mountains, as shown in the Figure 2 of Zhu et al., 2024 (doi: https://doi.org/10.1016/j.epsl.2024.119070). 
